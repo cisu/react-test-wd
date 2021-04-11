@@ -8,6 +8,7 @@ import Cta from './components/Cta';
 import Offers from './components/Offers';
 import CarouselProducts from './components/carousel/CarouselProducts';
 import Products from './components/Products';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Offers />
       <CarouselProducts />
       <Products />
+      <Footer />
     </div>
   );
 }
