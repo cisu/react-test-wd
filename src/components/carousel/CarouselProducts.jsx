@@ -1,8 +1,10 @@
 import React from 'react';
-import Product_1 from '../../assets/images/product-1.jpg';
-import Product_2 from '../../assets/images/product-2.jpg';
-import Product_3 from '../../assets/images/product-3.jpg';
-import Product_4 from '../../assets/images/product-4.jpg';
+// import data
+import {data} from './data';
+// import Product_1 from '../../assets/images/product-1.jpg';
+// import Product_2 from '../../assets/images/product-2.jpg';
+// import Product_3 from '../../assets/images/product-3.jpg';
+// import Product_4 from '../../assets/images/product-4.jpg';
 
 import './CarouselProducts.scss';
 
@@ -25,59 +27,44 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
-const data = [
-  {
-    id: 1,
-    username: 'user-1',
-    testimonial: 'testimonial-1',
-  },
-  {
-    id: 2,
-    username: 'user-2',
-    testimonial: 'testimonial-2',
-  },
-  {
-    id: 3,
-    username: 'user-3',
-    testimonial: 'testimonial-3',
-  },
-  {
-    id: 4,
-    username: 'user-4',
-    testimonial: 'testimonial-4',
-  },
-  {
-    id: 5,
-    username: 'user-5',
-    testimonial: 'testimonial-5',
-  },
-  {
-    id: 6,
-    username: 'user-6',
-    testimonial: 'testimonial-6',
-  },
-];
-
 const CarouselProducts = () => {
   return (
-    <div className='App mb-5 pb-5'>
-      <h1>Swiper Js</h1>
+    <div className='carousel mb-5 pb-5'>
+      <h1 className='carousel__heading'>
+        ΕΒΔΟΜΑΔΙΑΙΕΣ <br /> ΠΡΟΤΑΣΕΙΣ
+      </h1>
+      <p className='carousel__subheading'>
+        Dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+        incididunt ut labore id
+      </p>
       <Swiper
         // effect='coverflow'
-        spaceBetween={50}
-        slidesPerView={4}
-        // breakpoints={{
-        //   // when window width is >= 640px
-        //   640: {
-        //     width: 640,
-        //     slidesPerView: 1,
-        //   },
-        //   // when window width is >= 768px
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 4,
-        //   },
-        // }}
+        spaceBetween={0}
+        // slidesPerView={1}
+        breakpoints={{
+          350: {
+            width: 350,
+            slidesPerView: 1,
+          },
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          980: {
+            width: 980,
+            slidesPerView: 2,
+          },
+          1200: {
+            width: 1200,
+            slidesPerView: 3,
+          },
+          1500: {
+            width: 1500,
+            slidesPerView: 4,
+          },
+        }}
         // navigation
         pagination={{clickable: true}}
         // scrollbar={{draggable: true}}
@@ -85,15 +72,26 @@ const CarouselProducts = () => {
         onSwiper={swiper => console.log(swiper)}
       >
         {data.map(user => (
-          <SwiperSlide key={user.id} className='slide'>
+          <SwiperSlide key={user.id} className='slide mx-auto'>
             <div className='slide-content'>
               <div className='user-image'>
-                <img className='user-photo' src={Product_1} alt='' />
+                <img className='user-photo' src={user.img} alt='' />
               </div>
-              <h5>{user.username}</h5>
-              <p className='user-testimonial'>
-                <i>{user.testimonial}</i>
-              </p>
+              <div className='user-content'>
+                <div>
+                  <h5 className='user-content--name'>{user.name}</h5>
+                  <p className='text-muted user-content--description text-left'>
+                    {user.description}
+                  </p>
+                </div>
+
+                <p className='text-muted user-price'>
+                  <del className='mr-1'>
+                    <i>{user.priceBefore}</i>
+                  </del>
+                  <i>${user.price}</i>
+                </p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

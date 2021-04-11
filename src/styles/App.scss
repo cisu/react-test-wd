@@ -80,6 +80,7 @@ body {
 
   &__heading {
     color: #000;
+    text-align: left;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -125,11 +126,12 @@ body {
 
   &__heading {
     padding-top: 4rem;
+    text-align: left;
     color: #000;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   &__bg-img {
@@ -139,7 +141,7 @@ body {
   }
 
   &__product_image {
-    margin-top: -0.1rem;
+    // margin-top: -0.1rem;
   }
 
   &__btn {
@@ -152,6 +154,60 @@ body {
     &--outline {
       padding: 0.8rem 4.5rem;
     }
+  }
+}
+
+.products {
+  position: relative;
+
+  .col-lg-12,
+  .col-xl-6 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  &__col {
+    min-height: 450px;
+  }
+
+  &__bg-1 {
+    background-image: url('./../assets/images/category-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    min-height: 400px;
+    min-height: 400px;
+  }
+
+  // &__img {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   min-height: 400px;
+  // }
+
+  &__text {
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 50px;
+
+    &--title {
+      margin-bottom: -0.5rem;
+    }
+
+    &--subtitle {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  &__bg {
+    background-image: url('./../assets/images/category-1.jpg');
+    background-repeat: no-repeat;
+    // min-height: 400px;
   }
 }
 

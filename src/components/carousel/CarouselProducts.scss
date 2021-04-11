@@ -1,5 +1,19 @@
-.App {
+.carousel {
   text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  &__subheading {
+    width: 450px;
+    margin: 1rem auto 2rem auto;
+  }
 }
 
 .slide {
@@ -9,34 +23,53 @@
 }
 
 .slide-content {
-  background: rgba(10, 90, 211, 0.575);
-  height: 150px;
+  // background: rgba(10, 90, 211, 0.575);
+  width: 350px;
+  height: 350px;
   text-align: center;
 }
 
 .slide-content {
   padding-bottom: 50px;
-  margin-bottom: 50px;
-  width: 300px;
+  margin-bottom: 100px;
+  // width: 300px;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .user-image {
-  width: 90px;
-  height: 90px;
+  width: 350px;
+  height: 320px;
   background-color: rgb(233, 233, 233);
-  border-radius: 45px;
+  // border-radius: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .user-photo {
-  border-radius: 45px;
-  width: 80px;
+  // border-radius: 45px;
+  height: 100%;
+  width: 100%;
 }
 
-.user-testimonial {
-  font-size: large;
+.user-content {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+
+  &--name {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: left;
+  }
+
+  &--description {
+  }
+}
+
+.user-price {
+  margin-top: 1.2rem;
 }
 
 /* .swiper-pagination-bullet, */
@@ -57,14 +90,51 @@
   width: 480px;
 }
 
+@media screen and (min-width: 350px) {
+  .swiper-container {
+    width: 350px;
+  }
+  .slide-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-pagination {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .swiper-container {
     width: 640px;
   }
+  .slide-content {
+    // padding-bottom: 50px;
+    // margin-bottom: 100px;
+    // width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   .swiper-container {
-    width: 768px;
+    width: 980px;
+    // width: 768px;
+  }
+  // .slide-content {
+  //   padding-bottom: 50px;
+  //   margin-bottom: 100px;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .swiper-container {
+    width: 1500px;
   }
 }

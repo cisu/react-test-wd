@@ -7,16 +7,17 @@ import Navigation from './components/Navigation';
 import Cta from './components/Cta';
 import Offers from './components/Offers';
 import CarouselProducts from './components/carousel/CarouselProducts';
-// import Carousel from './components/Carousel';
+import Products from './components/Products';
 
 function App() {
   return (
-    <div className='App'>
+    <div className=''>
       <Language />
       <Navigation />
       <Cta />
       <Offers />
       <CarouselProducts />
+      <Products />
     </div>
   );
 }
