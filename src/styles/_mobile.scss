@@ -1,0 +1,14 @@
+@media (max-width: 640px) {
+  .cta {
+    &__btn {
+      &--yellow {
+        width: 100%;
+      }
+
+      &--outline {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

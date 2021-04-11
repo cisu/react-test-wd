@@ -1,0 +1,158 @@
+@import './custom';
+
+body {
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1470px !important;
+}
+
+.language {
+  &--bg {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 0.8rem;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 0;
+    left: -0.8rem;
+  }
+}
+
+.header {
+  margin-top: 5px;
+
+  &__navbar {
+    background-color: #fff;
+  }
+
+  &__link {
+    color: #000000 !important;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin: 0 1.3rem;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  &__logo {
+    margin-left: -10px;
+  }
+
+  &__icons {
+    margin-right: -20px;
+  }
+
+  // media query
+  @media (max-width: 1485px) {
+    &__icons {
+      margin-right: 0px;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    text-align: center !important;
+
+    &:nth-child(2) {
+      margin: auto 1.7rem;
+    }
+  }
+}
+
+.cta {
+  background-image: url('../assets/images/main-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  // height: 520px;
+  padding-bottom: 9rem;
+
+  &__container {
+    padding-top: 5rem;
+  }
+
+  &__heading {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__content {
+    color: white;
+    line-height: 1;
+    font-size: 1rem;
+  }
+
+  &__btn {
+    border-radius: 0;
+    padding: 0.7rem 3.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    &--yellow {
+      background: #f6ed22;
+      border: 1px solid #f6ed22;
+      color: #000;
+
+      &:hover {
+        background: darken(#f6ed22, 20%);
+        border: 1px solid darken(#f6ed22, 20%);
+        color: white;
+      }
+    }
+
+    &--outline {
+      margin-left: 2rem;
+      padding: 0.8rem 3.34rem;
+    }
+  }
+}
+
+.offers {
+  position: relative;
+
+  &__container {
+    padding-top: 4.5rem;
+  }
+
+  &__heading {
+    padding-top: 4rem;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10rem;
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__product_image {
+    margin-top: -0.1rem;
+  }
+
+  &__btn {
+    border-radius: 0;
+    padding: 0.7rem 3.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+
+    &--outline {
+      padding: 0.8rem 4.5rem;
+    }
+  }
+}
+
+@import './mobile';

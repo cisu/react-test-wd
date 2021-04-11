@@ -1,0 +1,19 @@
+/* The following block can be included in a custom.scss */
+
+// @import 'bootstrap/functions';
+// @import 'bootstrap/variables';
+
+// $grid-breakpoints: (
+//   xs: 375px,
+//   sm: 640px,
+//   md: 1500px,
+//   lg: 980px,
+//   xl: 1200px,
+// );
+
+$theme-colors: (
+  // 'primary': tomato,
+  // 'danger': teal,
+);
+/* import bootstrap to set changes */
+@import 'bootstrap/scss/bootstrap';

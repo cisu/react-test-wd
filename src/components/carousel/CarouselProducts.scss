@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.slide {
+  /* background: rgba(0, 0, 0, 0.1); */
+  height: 100px;
+  text-align: center;
+}
+
+.slide-content {
+  background: rgba(10, 90, 211, 0.575);
+  height: 150px;
+  text-align: center;
+}
+
+.slide-content {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+}
+
+.user-image {
+  width: 90px;
+  height: 90px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-photo {
+  border-radius: 45px;
+  width: 80px;
+}
+
+.user-testimonial {
+  font-size: large;
+}
+
+/* .swiper-pagination-bullet, */
+.swiper-pagination-bullet {
+  background: black !important;
+  color: red !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: black;
+  color: black;
+  opacity: 1 !important;
+}
+
+/* carousel breakpoints */
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
