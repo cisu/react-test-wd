@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className='footer pb-5'>
       <Container fluid>
         <Row className='py-5'>
-          <Col xl={3} lg={12} className='pl-5'>
+          <Col xl={3} lg={12} className='pl-5 footer__col'>
             <img src={LogoWhite} alt='Logo White' />
             <p className='footer__text mt-5'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
@@ -21,7 +21,7 @@ const Footer = () => {
               enim ducimus! Cupiditate?
             </p>
           </Col>
-          <Col xl={3} lg={12} className='mt-5 pl-5'>
+          <Col xl={3} lg={12} className='mt-5 pl-5 footer__col'>
             ΧΡΗΣΙΜΑ LINKS
             <div className='mt-4 footer__links'>
               <a href='/'>Όροι χρήσης</a>
@@ -34,7 +34,7 @@ const Footer = () => {
               <br />
             </div>
           </Col>
-          <Col xl={6} lg={12} className='mt-5'>
+          <Col xl={6} lg={12} className='mt-5 footer__col'>
             ΕΠΙΚΟΙΝΩΝΊΑ
             <div className='mt-4  footer__links'>
               <a>New York, NY 10013</a>

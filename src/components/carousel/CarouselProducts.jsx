@@ -42,8 +42,8 @@ const CarouselProducts = () => {
         spaceBetween={0}
         // slidesPerView={1}
         breakpoints={{
-          350: {
-            width: 350,
+          400: {
+            width: 300,
             slidesPerView: 1,
           },
           // when window width is >= 640px
@@ -72,7 +72,7 @@ const CarouselProducts = () => {
         onSwiper={swiper => console.log(swiper)}
       >
         {data.map(user => (
-          <SwiperSlide key={user.id} className='slide mx-auto'>
+          <SwiperSlide key={user.id} className='slide '>
             <div className='slide-content'>
               <div className='user-image'>
                 <img className='user-photo' src={user.img} alt='' />

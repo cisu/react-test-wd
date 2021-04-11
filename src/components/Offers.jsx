@@ -18,7 +18,7 @@ const Offers = () => {
       />
       <Container className='container offers__container'>
         <Row>
-          <Col md={12} lg={10} xl={6}>
+          <Col md={12} lg={12} xl={6}>
             <h1 className='offers__heading'>
               ΜΟΝΑΔΙΚΑ ΠΡΟΪΟΝΤΑ ΣΕ ΕΚΠΛΗΚΤΙΚΕΣ ΤΙΜΕΣ
             </h1>
@@ -32,7 +32,7 @@ const Offers = () => {
               </Button>
             </Row>
           </Col>
-          <Col md={12} lg={10} xl={6}>
+          <Col md={12} lg={12} xl={6}>
             <img
               src={Product}
               className='img-fluid offers__product_image'

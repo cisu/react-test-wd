@@ -10,7 +10,7 @@ const Cta = () => {
     <section className='cta'>
       <Container className='cta__container'>
         <Row>
-          <Col md={12} lg={10} xl={6}>
+          <Col md={12} lg={12} xl={6}>
             <h1 className='cta__heading'>
               ΕΚΤΥΠΩΜΕΝΑ ΠΟΛΛΑΠΛΩΝ ΧΡΗΣΕΩΝ ΠΟΤΗΡΙΑ
             </h1>
@@ -62,7 +62,7 @@ const Cta = () => {
             </Row> */}
           </Col>
 
-          <Col md={0} lg={2} xl={6}></Col>
+          <Col md={0} lg={0} xl={6}></Col>
         </Row>
       </Container>
     </section>

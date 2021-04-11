@@ -1,4 +1,14 @@
 @media (max-width: 640px) {
+  html {
+    font-size: 70%;
+  }
+
+  .header {
+    &__logo {
+      width: 70%;
+    }
+  }
+
   .cta {
     &__btn {
       &--yellow {
@@ -10,5 +20,11 @@
         margin-left: 0;
       }
     }
+  }
+}
+
+@media (max-width: 445px) {
+  .carousel {
+    display: none;
   }
 }

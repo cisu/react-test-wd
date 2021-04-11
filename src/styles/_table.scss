@@ -1,0 +1,89 @@
+@media (max-width: 1250px) {
+  // cta section
+  .cta {
+    &__btn {
+      &--yellow {
+        width: 80%;
+      }
+
+      &--outline {
+        width: 80%;
+        margin-left: 0;
+      }
+    }
+  }
+  // end of cta section
+
+  // offers section
+  .offers {
+    &__heading {
+      margin-bottom: 2rem;
+    }
+
+    &__btn {
+      &--outline {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  // end of offers section
+}
+
+@media (max-width: 1199.5px) {
+  // header section
+  .header {
+    &__link {
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid aliceblue;
+    }
+
+    &__icons {
+      margin-right: 0px;
+      margin: 1rem auto;
+    }
+  }
+  // end of header section
+
+  // cta section
+  .cta {
+    background-position: bottom center;
+    &__container {
+      max-width: 980px !important;
+      margin: 0 auto;
+    }
+
+    &__heading {
+    }
+  }
+  // end of cta section
+
+  // offers section
+  .offers {
+    &__container {
+      max-width: 980px !important;
+      margin: 0 auto;
+    }
+  }
+  // end of offers section
+
+  // footer section
+  .footer {
+    &__col {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__text {
+      width: 100%;
+    }
+
+    &__input {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+  // end of footer section
+}

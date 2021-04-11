@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1470px !important;
 }
@@ -262,4 +266,5 @@ body {
   }
 }
 
+@import './table';
 @import './mobile';

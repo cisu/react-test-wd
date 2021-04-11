@@ -10,9 +10,11 @@ import CarouselProducts from './components/carousel/CarouselProducts';
 import Products from './components/Products';
 import Footer from './components/Footer.jsx';
 
+import {BrowserRouter as Router} from 'react-router-dom';
+
 function App() {
   return (
-    <div className=''>
+    <Router>
       <Language />
       <Navigation />
       <Cta />
@@ -20,7 +22,7 @@ function App() {
       <CarouselProducts />
       <Products />
       <Footer />
-    </div>
+    </Router>
   );
 }
 
