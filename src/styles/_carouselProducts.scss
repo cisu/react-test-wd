@@ -86,14 +86,23 @@
 }
 
 /* carousel breakpoints */
-.swiper-container {
-  width: 480px;
-}
+// .swiper-container {
+//   width: 480px;
+// }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 250px) {
   .swiper-container {
-    width: 350px;
+    width: 3250px;
   }
+
+  .user-image {
+    width: 220px;
+  }
+
+  .user-content {
+    width: 220px;
+  }
+
   .slide-content {
     margin-left: auto;
     margin-right: auto;

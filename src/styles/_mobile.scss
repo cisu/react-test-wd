@@ -21,6 +21,37 @@
       }
     }
   }
+
+  .products {
+    &__text {
+      text-shadow: 2px 2px 15px rgb(0, 0, 0);
+      &--title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      &--subtitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footer {
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    &__col {
+      font-size: 1.5rem;
+    }
+
+    &__links {
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 445px) {

@@ -37,7 +37,7 @@ const Footer = () => {
           <Col xl={6} lg={12} className='mt-5 footer__col'>
             ΕΠΙΚΟΙΝΩΝΊΑ
             <div className='mt-4  footer__links'>
-              <a>New York, NY 10013</a>
+              <a href='/'>New York, NY 10013</a>
               <br />
               <a href='tel:+31555122579'>(315)5512-2579</a>
               <br />

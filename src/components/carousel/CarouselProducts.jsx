@@ -29,7 +29,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
 const CarouselProducts = () => {
   return (
-    <div className='carousel mb-5 pb-5'>
+    <div className='container carousel mb-5 pb-5'>
       <h1 className='carousel__heading'>
         ΕΒΔΟΜΑΔΙΑΙΕΣ <br /> ΠΡΟΤΑΣΕΙΣ
       </h1>
@@ -42,8 +42,8 @@ const CarouselProducts = () => {
         spaceBetween={0}
         // slidesPerView={1}
         breakpoints={{
-          400: {
-            width: 300,
+          250: {
+            width: 250,
             slidesPerView: 1,
           },
           // when window width is >= 640px
